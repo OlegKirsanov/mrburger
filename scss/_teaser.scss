@@ -1,0 +1,15 @@
+.teaser {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.teaser__block {
+    margin-left: 20px;
+
+    &--right {
+        padding-top: 80px; //модификатор верхнего оступа
+    }
+}

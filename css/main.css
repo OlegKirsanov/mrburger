@@ -51,29 +51,6 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0; }
 
-.page-switch {
-  position: fixed;
-  top: 10%;
-  right: 5%; }
-
-.page-switch__item {
-  background-color: #ffffff;
-  border-radius: 50%;
-  width: 6px;
-  height: 6px;
-  margin-bottom: 15px;
-  position: relative;
-  cursor: pointer; }
-  .page-switch__item:hover:after {
-    content: '';
-    border-radius: 50%;
-    border: 1px solid #ffffff;
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: -75%;
-    left: -75%; }
-
 .wrapper {
   width: 100%;
   height: 100%; }
@@ -91,23 +68,20 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .container {
   width: 940px;
-  margin: 0 auto; }
-
-.intro {
-  background-image: url("../img/bg/intro-bg.png");
-  background-repeat: no-repeat;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  height: 100%;
-  background-size: cover;
-  position: relative;
+  margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .header {
   display: -webkit-box;
@@ -118,27 +92,64 @@ p, h1, h2, h3, h4, h5, h6 {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin-top: 20px;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap; }
+  margin-top: 10px; }
+
+.logo {
+  display: inline-block;
+  width: 90px;
+  height: 70px; }
+  .logo__img {
+    width: 100%;
+    height: 100%; }
+
+.button {
+  display: inline-block;
+  width: auto;
+  padding: 0 15px;
+  height: 35px;
+  font-size: 13px;
+  font-family: "ubuntu";
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 5px;
+  line-height: 35px;
+  font-weight: 500; }
+  .button:hover {
+    background-color: #c13c18;
+    cursor: pointer; }
+
+.intro {
+  background-image: url("../img/bg/intro-bg.png");
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 100%;
+  background-size: cover; }
+
+.intro__button {
+  background-color: #e45028;
+  margin-left: 15px; }
+
+.intro__title {
+  color: #f9b43b;
+  display: inline-block; }
 
 .nav {
   margin: 0;
   padding: 0;
-  margin-left: 210px;
-  list-style: none; }
+  margin-left: auto;
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
 .nav__item {
-  display: inline-block;
-  vertical-align: middle;
   white-space: nowrap; }
   .nav__item:after {
-    content: " ";
+    content: "";
     display: inline-block;
     width: 5px;
     height: 5px;
@@ -159,33 +170,23 @@ p, h1, h2, h3, h4, h5, h6 {
   .nav__link:hover {
     color: #d9d9d9; }
 
-.logo {
-  width: 99px;
-  height: 75px; }
-  .logo__img {
-    width: 100%;
-    height: 100%; }
+.title {
+  font-size: 72px;
+  font-family: "gagalin";
+  font-weight: normal;
+  margin: 0;
+  padding: 0; }
 
-.button {
-  width: auto;
-  padding: 0 15px;
-  height: 35px;
-  font-size: 13px;
-  font-family: "ubuntu";
-  text-transform: uppercase;
+.description {
   color: #ffffff;
-  text-align: center;
-  vertical-align: middle;
-  border-radius: 5px;
-  line-height: 35px;
-  font-weight: 500; }
-  .button:hover {
-    background-color: #c13c18;
-    cursor: pointer; }
-
-.intro__button {
-  background-color: #e45028;
-  margin-left: 15px; }
+  font-size: 65px;
+  font-family: "lifehack";
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+  line-height: 1em;
+  display: inline-block; }
 
 .teaser {
   display: -webkit-box;
@@ -210,36 +211,40 @@ p, h1, h2, h3, h4, h5, h6 {
   .teaser__block--right {
     padding-top: 80px; }
 
-.intro__title {
-  color: #f9b43b;
-  display: inline-block; }
+.scroll {
+  width: 30px;
+  height: 15px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 5%;
+  left: 50%; }
 
-.title {
-  font-size: 72px;
-  font-family: "gagalin";
-  font-weight: normal;
-  margin: 0;
-  padding: 0; }
+.scroll__img {
+  width: 100%;
+  height: 100%; }
 
-.description {
-  color: #ffffff;
-  font-size: 65px;
-  font-family: "lifehack";
-  font-weight: normal;
-  margin: 0;
-  padding: 0;
-  margin-top: 15px;
-  line-height: 1em;
-  display: inline-block; }
+.page-switch {
+  position: fixed;
+  top: 10%;
+  right: 5%; }
 
-.scroll-arrow {
-  background-image: url("../img/content/scroll-arrow.png");
-  background-repeat: no-repeat;
-  width: auto;
-  height: 14px;
-  background-position: center center;
-  margin-top: 15%;
+.page-switch__item {
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  margin-bottom: 15px;
+  position: relative;
   cursor: pointer; }
+  .page-switch__item:hover:after {
+    content: '';
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -75%;
+    left: -75%; }
 
 .best {
   background-image: url("../img/bg/best-bg.png");
@@ -268,6 +273,14 @@ p, h1, h2, h3, h4, h5, h6 {
 .best__title {
   color: #2f3234;
   text-align: center; }
+
+.best__regular-text {
+  color: #2f3234; }
+
+.regular-text {
+  font-family: "ubuntu";
+  font-weight: 300;
+  line-height: 1.7em; }
 
 .advantages {
   display: -webkit-box;
@@ -307,14 +320,6 @@ p, h1, h2, h3, h4, h5, h6 {
   .advantages__img--three {
     background-image: url("../img/content/natural.png");
     background-repeat: no-repeat; }
-
-.regular-text {
-  font-family: "ubuntu";
-  font-weight: 300;
-  line-height: 1.7em; }
-
-.best__regular-text {
-  color: #2f3234; }
 
 .reviews {
   height: 100%; }

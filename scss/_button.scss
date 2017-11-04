@@ -1,0 +1,20 @@
+.button {
+    display: inline-block;
+    width: auto;
+    padding: 0 15px;
+    height: 35px;
+    font-size: 13px;
+    font-family: "ubuntu";
+    text-transform: uppercase;
+    color: $white;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 5px;
+    line-height: 35px;
+    font-weight: 500;
+
+    &:hover {
+        background-color: darken($red, 10%);
+        cursor: pointer;
+    }
+}

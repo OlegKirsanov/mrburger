@@ -1,0 +1,37 @@
+.advantages {
+    display: flex;
+    margin-top: 70px;
+}
+
+.advantages__item {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+}
+
+.advantages__title {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-family: "lifehack";
+    font-size: 24px;
+    color: $grayish;
+}
+
+.advantages__img {
+    width: auto;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &--one {
+        @include bg-image('content/meat');    
+    }
+    
+    &--two {
+        @include bg-image('content/hand');    
+    }
+
+    &--three {
+        @include bg-image('content/natural');    
+    }
+}

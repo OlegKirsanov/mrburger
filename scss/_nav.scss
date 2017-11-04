@@ -1,0 +1,38 @@
+.nav {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+}
+
+.nav__item {
+    white-space: nowrap;
+    
+    &:after {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;   
+    background-color: $white;
+    border-radius: 2.5px;
+    margin: 0 12px;
+    vertical-align: middle;
+    }
+    &:last-child:after {
+        display: none;
+    }
+}
+
+.nav__link {
+    color: $white;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "ubuntu";
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        color: darken($white,15%);
+    }
+}

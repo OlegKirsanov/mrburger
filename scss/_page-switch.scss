@@ -1,0 +1,26 @@
+.page-switch {
+    position: fixed;
+    top: 10%;
+    right: 5%;
+}
+
+.page-switch__item {
+    background-color: $white;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    margin-bottom: 15px;
+    position: relative;
+    cursor: pointer;
+
+    &:hover:after {
+        content: '';
+        border-radius: 50%;
+        border: 1px solid $white;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: -75%;
+        left: -75%;
+    }
+}
