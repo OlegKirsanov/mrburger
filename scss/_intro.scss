@@ -2,8 +2,10 @@
     @include bg-image('bg/intro-bg');
     background-repeat: no-repeat;
     background-position: 50%;
-    height: 100%;
     background-size: cover;
+    height: 100vh;
+    min-height: 650px;
+    position: relative;  
 }
 
 .intro__button {

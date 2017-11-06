@@ -1,0 +1,105 @@
+.team {
+    @include bg-image('bg/team-bg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    height: 100vh;
+    min-height: 650px;
+    position: relative;
+}
+
+.side-block {
+    position: absolute;
+    background-color: $blue-gray;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    right: 0;
+    padding: 87px 100px 130px 134px;
+}
+
+.side-block__title {
+    color: $yellow;
+    display: inline-block;
+    margin-bottom: 85px;
+}
+
+.team-item {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.bullet-point {
+    width: 0;
+    height: 0;
+    border-top: 6px solid $yellow;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid transparent;
+    display: inline-block;
+    padding: 0;
+    position: absolute;
+    top: 7px;
+    left: 0;
+}
+
+.team-item__name {
+    font-size: 14px;
+    font-family: "gagalin";
+    color: $white;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.team-item__popup {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 0;
+    overflow: hidden;
+}
+
+.team-item__popup--visited {
+    overflow: visible;
+    height: 100%;
+}
+
+.team-item__name--visited {
+    color: $yellow;
+}
+
+.bullet-point--visited {
+    border-top: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid $yellow;
+    border-left: 6px solid transparent;
+    top: 2px;
+    left: 0;         
+}
+
+.team-item__photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: url(../img/content/aphex.png) center center no-repeat;
+    flex-shrink: 0;
+}
+
+.team-item__col {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: $white;
+    align-self: flex-start;
+}
+
+.team-item__position {
+    font-weight: 700;
+}
+
+
