@@ -1,11 +1,5 @@
 .team {
     @include bg-image('bg/team-bg');
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    height: 100vh;
-    min-height: 650px;
-    position: relative;
 }
 
 .side-block {

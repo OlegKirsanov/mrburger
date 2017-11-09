@@ -1,17 +1,29 @@
 .page-switch {
     position: fixed;
-    top: 10%;
+    top: 12%;
     right: 4%;
 }
 
 .page-switch__item {
     background-color: $white;
     border-radius: 50%;
-    width: 6px;
-    height: 6px;
-    margin-bottom: 15px;
+    width: 5px;
+    height: 5px;
+    margin-bottom: 14px;
     position: relative;
     cursor: pointer;
+
+    &--active:after {
+        content: '';
+        border-radius: 50%;
+        border: 1px solid $white;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: -5px;
+        left: -5px;
+    }
+
 
     &:hover:after {
         content: '';
@@ -20,7 +32,8 @@
         width: 15px;
         height: 15px;
         position: absolute;
-        top: -75%;
-        left: -75%;
+        top: -5px;
+        left: -5px;
+        transition: 2s;
     }
 }

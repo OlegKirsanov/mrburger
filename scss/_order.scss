@@ -1,0 +1,161 @@
+.order {
+    background-image: url(../img/bg/order-texture.png), url(../img/bg/chalk-bg.png);
+    display: flex;
+}
+
+.order-title {
+    color: $yellow;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.form__elem {
+    display: flex;
+}
+
+.form__col {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    
+        &:last-child {
+            margin-right: 0;
+        }
+}
+
+
+.form__row {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 20px;
+}
+
+.form__block {
+    flex: 1;
+    margin-right: 20px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.form__textarea-title, .form__block-title, .form__radio-title, .form__checkbox-title {
+    color: $white;
+    font-family: "ubuntu";
+    font-size: 14px;
+    font-weight: 300px;
+}
+
+.form__input {
+    border-radius: 5px;
+    border: 1px solid $border-gray;
+    padding: 2px 5px;
+    height: 30px; 
+    font-family: "ubuntu";
+    font-size: 14px;
+    width: 100%;
+    margin-top: 10px;
+}
+    
+.form__textarea {
+    font-family: "ubuntu";
+    font-size: 14px;
+    border: 1px solid $border-gray;
+    padding: 2px 5px;
+    border-radius: 5px;
+    height: 106px;
+    width: 100%;
+    margin: 10px 0 15px 0;
+}
+
+.form__radio, .form__checkbox {
+    display: none;
+}
+
+.form__radio--сustom, {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: $white;
+    border-radius: 50%;
+    position: relative;
+    vertical-align: middle;
+}
+
+.form__checkbox--custom {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: $white;
+    border-radius: 1px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.form__radio-title {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.form__checkbox-title {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.form__radio-block {
+    margin-left: 20px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.form__radio:checked + .form__radio--сustom:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: 2px;
+    bottom: 2px;
+    left: 4px;
+    width: 6px;
+    height: 6px;
+    background-color: $red;
+    border-radius: 50%;
+}
+
+.form__checkbox:checked + .form__checkbox--custom:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: url(../icons/check.svg) center center no-repeat;
+    width: 11px;
+    height: 9px;
+}
+
+.order__button {
+    background-color: $red;
+    width: 100px;
+}
+
+.form__reset-block {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.form__reset {
+    display: none;
+}
+
+.form__reset--custom {
+    font-family: "ubuntu";
+    font-size: 14px;
+    color: $white;
+
+    &:hover {
+        text-decoration: underline;
+    }
+} 
