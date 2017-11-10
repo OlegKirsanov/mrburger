@@ -1,17 +1,22 @@
 .intro {
     @include bg-image('bg/intro-bg');
-    background-repeat: no-repeat;
-    background-position: 50%;
-    height: 100%;
-    background-size: cover;
 }
 
 .intro__button {
     background-color: $red;
-    margin-left: 15px;
+
+    @include tablets {
+        margin-left: auto;
+    }
 }
 
 .intro__title {
     color: $yellow;
-    display: inline-block;   
+    display: block;
+    white-space: nowrap;   
+
+    @include tablets {
+     text-align: center;
+     white-space: nowrap;
+    }
 }

@@ -1,0 +1,38 @@
+.burger-menu {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+  transform: rotate(0deg);
+
+  cursor: pointer;
+  margin-left: 1.875rem;
+
+  &__bar {
+    display: block;
+    position: absolute;
+    height: 0.25rem;
+    width: 100%;
+    background: $white;
+    border-radius: 0.125rem;
+    opacity: 0;
+    left: 0;
+    transform: rotate(0deg);
+
+
+    @include tablets {
+      opacity: 1;
+    }
+  }
+
+  &__bar:nth-child(1) {
+    top: 0rem;  
+  }
+
+  &__bar:nth-child(2) {
+    top: 0.5625rem;  
+  }
+
+  &__bar:nth-child(3) {
+    top: 1.125rem;  
+  }
+}

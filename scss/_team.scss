@@ -1,0 +1,99 @@
+.team {
+    @include bg-image('bg/team-bg');
+}
+
+.side-block {
+    position: absolute;
+    background-color: $blue-gray;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    right: 0;
+    padding: 5.4375rem 6.25rem 8.125rem 8.375rem;
+}
+
+.side-block__title {
+    color: $yellow;
+    display: inline-block;
+    margin-bottom: 5.3125rem;
+}
+
+.team-item {
+    position: relative;
+    margin-bottom: 2.1875rem;
+}
+
+.bullet-point {
+    width: 0;
+    height: 0;
+    border-top: 0.375rem solid $yellow;
+    border-right: 0.375rem solid transparent;
+    border-bottom: 0.375rem solid transparent;
+    border-left: 0.375rem solid transparent;
+    display: inline-block;
+    padding: 0;
+    position: absolute;
+    top: 0.4375rem;
+    left: 0;
+}
+
+.team-item__name {
+    font-size: 0.875rem;
+    font-family: "gagalin";
+    color: $white;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 1.5625rem;
+    cursor: pointer;
+}
+
+.team-item__popup {
+    margin-top: 0.875rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 0;
+    overflow: hidden;
+}
+
+.team-item__popup--visited {
+    overflow: visible;
+    height: 100%;
+}
+
+.team-item__name--visited {
+    color: $yellow;
+}
+
+.bullet-point--visited {
+    border-top: 0.375rem solid transparent;
+    border-right: 0.375rem solid transparent;
+    border-bottom: 0.375rem solid $yellow;
+    border-left: 0.375rem solid transparent;
+    top: 0.125rem;
+    left: 0;         
+}
+
+.team-item__photo {
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    background: url(../img/content/aphex.png) center center no-repeat;
+    flex-shrink: 0;
+}
+
+.team-item__col {
+    margin-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: $white;
+    align-self: flex-start;
+}
+
+.team-item__position {
+    font-weight: 700;
+}
+
+

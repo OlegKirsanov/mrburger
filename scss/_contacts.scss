@@ -1,0 +1,94 @@
+.contacts {
+    @include bg-image('bg/map-bg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    height: 100vh;
+    min-height: 40.625rem;
+    position: relative;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.social__icon {
+    fill: #585858;
+    stroke: #585858;
+    width: 1.25rem;
+    max-height: 1.25rem;
+
+    &:hover {
+        fill: $white;
+        stroke: $white;    
+    }
+}
+
+.info__phone-icon {
+    fill: #e14f28;
+    height: 0.75rem;
+    width: 0.75rem;
+    margin-right: 0.3125rem;
+}
+
+.footer {
+    height: 3.75rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0.625rem 0;
+    background: url(../img/bg/chalk-bg.png) center center no-repeat;
+    background-size: 100% auto;
+}
+
+.footer-container {
+    flex-direction: row;
+}
+
+.footer-col {
+    min-width: 50%;
+    height: 100%;
+    flex: 1 0 0;
+}
+
+.info__phone-icon, .info__phone-number {
+    display: inline-block;
+    color: #e14f28;
+    font-family: "ubuntu";
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.info__address {
+    color: $white;
+    font-family: "ubuntu";
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+
+.social {
+    margin-top: 0.625rem;
+    text-align: right;
+    // display: flex;
+    // justify-content: flex-end;
+    // align-items: center;
+    // height: 100%;
+}
+
+.social__link {
+    height: 100%;
+}
+
+.social__item {
+    display: inline-block;
+    margin-right: 1.25rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+
+
