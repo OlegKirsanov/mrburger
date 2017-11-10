@@ -7,33 +7,33 @@
 .page-switch__item {
     background-color: $white;
     border-radius: 50%;
-    width: 5px;
-    height: 5px;
-    margin-bottom: 14px;
+    width: 0.3125rem;
+    height: 0.3125rem;
+    margin-bottom: 0.875rem;
     position: relative;
     cursor: pointer;
 
     &--active:after {
         content: '';
         border-radius: 50%;
-        border: 1px solid $white;
-        width: 15px;
-        height: 15px;
+        border: 0.0625rem solid $white;
+        width: 0.9375rem;
+        height: 0.9375rem;
         position: absolute;
-        top: -5px;
-        left: -5px;
+        top: -0.3125rem;
+        left: -0.3125rem;
     }
 
 
     &:hover:after {
         content: '';
         border-radius: 50%;
-        border: 1px solid $white;
-        width: 15px;
-        height: 15px;
+        border: 0.0625rem solid $white;
+        width: 0.9375rem;
+        height: 0.9375rem;
         position: absolute;
-        top: -5px;
-        left: -5px;
+        top: -0.3125rem;
+        left: -0.3125rem;
         transition: 2s;
     }
 }

@@ -4,7 +4,11 @@
     margin-left: auto;
     list-style: none;
     display: flex;
-    margin-right: 15px;
+    margin-right: 0.9375rem;
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .nav__item {
@@ -15,11 +19,11 @@
     &:after {
     content: "";
     display: block;
-    width: 5px;
-    height: 5px;   
+    width: 0.3125rem;
+    height: 0.3125rem;   
     background-color: $white;
     border-radius: 50%;
-    margin: 0 12px;
+    margin: 0 0.75rem;
    }
 
     &:last-child:after {
@@ -29,7 +33,7 @@
 
 .nav__link {
     color: $white;
-    font-size: 13px;
+    font-size: 0.8125rem;
     font-weight: 500;
     font-family: "ubuntu";
     text-decoration: none;

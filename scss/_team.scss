@@ -9,46 +9,46 @@
     width: 50%;
     top: 0;
     right: 0;
-    padding: 87px 100px 130px 134px;
+    padding: 5.4375rem 6.25rem 8.125rem 8.375rem;
 }
 
 .side-block__title {
     color: $yellow;
     display: inline-block;
-    margin-bottom: 85px;
+    margin-bottom: 5.3125rem;
 }
 
 .team-item {
     position: relative;
-    margin-bottom: 35px;
+    margin-bottom: 2.1875rem;
 }
 
 .bullet-point {
     width: 0;
     height: 0;
-    border-top: 6px solid $yellow;
-    border-right: 6px solid transparent;
-    border-bottom: 6px solid transparent;
-    border-left: 6px solid transparent;
+    border-top: 0.375rem solid $yellow;
+    border-right: 0.375rem solid transparent;
+    border-bottom: 0.375rem solid transparent;
+    border-left: 0.375rem solid transparent;
     display: inline-block;
     padding: 0;
     position: absolute;
-    top: 7px;
+    top: 0.4375rem;
     left: 0;
 }
 
 .team-item__name {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: "gagalin";
     color: $white;
     text-transform: uppercase;
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 1.5625rem;
     cursor: pointer;
 }
 
 .team-item__popup {
-    margin-top: 14px;
+    margin-top: 0.875rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -67,24 +67,24 @@
 }
 
 .bullet-point--visited {
-    border-top: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-bottom: 6px solid $yellow;
-    border-left: 6px solid transparent;
-    top: 2px;
+    border-top: 0.375rem solid transparent;
+    border-right: 0.375rem solid transparent;
+    border-bottom: 0.375rem solid $yellow;
+    border-left: 0.375rem solid transparent;
+    top: 0.125rem;
     left: 0;         
 }
 
 .team-item__photo {
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
     border-radius: 50%;
     background: url(../img/content/aphex.png) center center no-repeat;
     flex-shrink: 0;
 }
 
 .team-item__col {
-    margin-left: 20px;
+    margin-left: 1.25rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

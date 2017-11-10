@@ -50,14 +50,14 @@
 
 .menu-accord__link {
     background-color: rgba($grayish, 0.7);
-    width: 80px;
+    width: 5rem;
 }
 
 .menu-accord__item--active {
 
     .menu-accord__description {
-    width: 540px;
-    padding: 50px 30px;
+    width: 33.75rem;
+    padding: 3.125rem 1.875rem;
     }
 
     .menu-accord__title {
@@ -71,7 +71,7 @@
     position: absolute;
     top: 50%;
     font-family: "gagalin";
-    font-size: 40px;
+    font-size: 2.5rem;
     color: $white;
 }
 
