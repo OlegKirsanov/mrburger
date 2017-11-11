@@ -176,6 +176,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .intro__title {
   color: #f9b43b;
   display: block;
+  width: 100%;
   white-space: nowrap; }
   @media screen and (max-width: 768px) {
     .intro__title {
@@ -241,7 +242,9 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   margin: 0;
   padding: 0;
-  margin-top: 0.9375rem; }
+  margin-top: 0.9375rem;
+  display: block;
+  width: 100%; }
   @media screen and (max-width: 768px) {
     .description {
       text-align: center; } }
@@ -258,19 +261,24 @@ p, h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  width: 100%; }
   @media screen and (max-width: 768px) {
     .teaser {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
-      flex-direction: column; } }
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
   .teaser__block {
     width: 50%; }
     @media screen and (max-width: 768px) {
       .teaser__block {
-        width: 50%;
+        width: 90%;
         text-align: center; } }
   .teaser__img {
     width: 100%;
@@ -280,6 +288,7 @@ p, h1, h2, h3, h4, h5, h6 {
     padding-left: 0.9375rem; }
     @media screen and (max-width: 768px) {
       .teaser__block--right {
+        padding-top: 2rem;
         padding-left: 0; } }
 
 .scroll {
@@ -287,7 +296,7 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 0.9375rem;
   margin: 0 auto;
   position: absolute;
-  bottom: 5%;
+  bottom: 2.5rem;
   left: 50%; }
 
 .scroll__img {
@@ -297,7 +306,10 @@ p, h1, h2, h3, h4, h5, h6 {
 .page-switch {
   position: fixed;
   top: 12%;
-  right: 4%; }
+  right: 2%; }
+  @media screen and (max-width: 768px) {
+    .page-switch {
+      display: none; } }
 
 .page-switch__item {
   background-color: #ffffff;
@@ -353,9 +365,6 @@ p, h1, h2, h3, h4, h5, h6 {
   text-align: center;
   margin-bottom: 4.375rem; }
 
-.best__regular-text {
-  color: #2f3234; }
-
 .regular-text {
   font-family: "ubuntu";
   font-weight: 300;
@@ -367,16 +376,52 @@ p, h1, h2, h3, h4, h5, h6 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  @media screen and (max-width: 480px) {
+    .advantages {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .advantages__item {
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
+  -webkit-flex: 1 0 30%;
+  -ms-flex: 1 0 30%;
+  flex: 1 0 30%;
+  padding: 0 1rem;
   text-align: center; }
+  @media screen and (max-width: 480px) {
+    .advantages__item {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      text-align: left;
+      margin-bottom: 2.5rem; }
+      .advantages__item:last-child {
+        margin-bottom: 0; } }
+
+.advantages__text-block {
+  text-align: center; }
+  @media screen and (max-width: 480px) {
+    .advantages__text-block {
+      width: 80%;
+      text-align: left;
+      margin-left: 1.25rem; } }
 
 .advantages__title {
   margin-top: 1.5625rem;
@@ -384,21 +429,27 @@ p, h1, h2, h3, h4, h5, h6 {
   font-family: "lifehack";
   font-size: 1.5rem;
   color: #2f3234; }
+  @media screen and (max-width: 480px) {
+    .advantages__title {
+      margin-top: 0; } }
 
 .advantages__img {
-  width: auto;
-  height: 6.25rem;
+  max-height: 5.6rem;
+  width: 100%;
   background-repeat: no-repeat;
   background-position: center center; }
-  .advantages__img--one {
-    background-image: url("../img/content/meat.png");
-    background-repeat: no-repeat; }
-  .advantages__img--two {
-    background-image: url("../img/content/hand.png");
-    background-repeat: no-repeat; }
-  .advantages__img--three {
-    background-image: url("../img/content/natural.png");
-    background-repeat: no-repeat; }
+  @media screen and (max-width: 768px) {
+    .advantages__img {
+      margin-top: 0;
+      max-height: 6.4rem; } }
+  @media screen and (max-width: 480px) {
+    .advantages__img {
+      margin-top: 0;
+      max-height: 5.4rem;
+      width: 30%; } }
+
+.advantages__description {
+  color: #2f3234; }
 
 .reviews__list {
   display: -webkit-box;

@@ -2,16 +2,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
     
     @include tablets {
         flex-direction: column;
+        justify-content: center;
     }
 
     &__block {
         width: 50%;
         
         @include tablets {
-            width: 50%;
+            width: 90%;
             text-align: center;
         }
     }
@@ -26,6 +28,7 @@
         padding-left: 0.9375rem;
 
         @include tablets {
+            padding-top: 2rem;
             padding-left: 0;
         }
     }

@@ -13,6 +13,7 @@
 .intro__title {
     color: $yellow;
     display: block;
+    width: 100%;
     white-space: nowrap;   
 
     @include tablets {
