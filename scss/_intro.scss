@@ -18,6 +18,24 @@
 
     @include tablets {
      text-align: center;
-     white-space: nowrap;
+     white-space: nowrap;   
+    }
+}
+
+.intro__description {
+    color: $white;
+    font-size: 4.0625rem;
+    font-family: "lifehack";
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    margin-top: 0.9375rem;
+    display: block;
+    width: 100%;
+
+    @include tablets {
+        text-align: center;
+        margin-top: 0;
+
     }
 }

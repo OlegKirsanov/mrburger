@@ -10,31 +10,30 @@
     top: 0;
     right: 0;
     padding: 5.4375rem 6.25rem 8.125rem 8.375rem;
+
+    @include tablets {
+        width: 100%;
+    }
 }
 
 .side-block__title {
     color: $yellow;
     display: inline-block;
     margin-bottom: 5.3125rem;
+
+    @include tablets {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .team-item {
     position: relative;
     margin-bottom: 2.1875rem;
-}
 
-.bullet-point {
-    width: 0;
-    height: 0;
-    border-top: 0.375rem solid $yellow;
-    border-right: 0.375rem solid transparent;
-    border-bottom: 0.375rem solid transparent;
-    border-left: 0.375rem solid transparent;
-    display: inline-block;
-    padding: 0;
-    position: absolute;
-    top: 0.4375rem;
-    left: 0;
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .team-item__name {
@@ -43,8 +42,23 @@
     color: $white;
     text-transform: uppercase;
     display: inline-block;
-    margin-left: 1.5625rem;
     cursor: pointer;
+    position: relative;
+    
+    &:before {
+        content: "";
+        width: 0;
+        height: 0;
+        padding: 0;
+        border-top: 0.375rem solid $yellow;
+        border-right: 0.375rem solid transparent;
+        border-bottom: 0.375rem solid transparent;
+        border-left: 0.375rem solid transparent;
+        display: block;
+        position: absolute;
+        top: 0.375rem;
+        left: -1.4375rem;
+    }
 }
 
 .team-item__popup {
@@ -55,6 +69,10 @@
     align-items: center;
     height: 0;
     overflow: hidden;
+
+    @include tablets {
+        flex-direction: column;
+    }
 }
 
 .team-item__popup--visited {
@@ -64,6 +82,11 @@
 
 .team-item__name--visited {
     color: $yellow;
+
+    &:before {
+        transform: rotate(180deg);
+        top: 0;
+    }
 }
 
 .bullet-point--visited {
@@ -84,12 +107,19 @@
 }
 
 .team-item__col {
-    margin-left: 1.25rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     color: $white;
     align-self: flex-start;
+    margin-left: 1.125rem;
+
+    @include tablets {
+        margin-top: 0.625rem;
+        margin-left: 0;
+        width: 100%;
+
+    }
 }
 
 .team-item__position {
