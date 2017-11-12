@@ -286,7 +286,7 @@ p, h1, h2, h3, h4, h5, h6 {
     height: 100%; }
     @media screen and (max-width: 768px) {
       .teaser__img {
-        padding: 0 7.8rem; } }
+        padding: 0 7rem; } }
     @media screen and (max-width: 480px) {
       .teaser__img {
         padding: 0; } }
@@ -722,11 +722,11 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .form__radio-title {
   vertical-align: middle;
-  margin-left: 0.625rem; }
+  margin-left: 0.3rem; }
 
 .form__checkbox-title {
   vertical-align: middle;
-  margin-left: 0.625rem; }
+  margin-left: 0.3rem; }
 
 .form__radio-block {
   margin-left: 1.25rem; }
@@ -1054,6 +1054,10 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: 0.625rem 0;
   background: url(../img/bg/chalk-bg.png) center center no-repeat;
   background-size: 100% auto; }
+  @media screen and (max-width: 480px) {
+    .footer {
+      height: 7.1875rem;
+      padding-top: 1.25rem; } }
 
 .footer-container {
   -webkit-box-orient: horizontal;
@@ -1061,6 +1065,17 @@ p, h1, h2, h3, h4, h5, h6 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row; }
+  @media screen and (max-width: 480px) {
+    .footer-container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .footer-col {
   min-width: 50%;
@@ -1069,6 +1084,9 @@ p, h1, h2, h3, h4, h5, h6 {
   -webkit-flex: 1 0 0;
   -ms-flex: 1 0 0px;
   flex: 1 0 0; }
+  @media screen and (max-width: 480px) {
+    .footer-col {
+      text-align: center; } }
 
 .info__phone-icon, .info__phone-number {
   display: inline-block;
@@ -1082,10 +1100,17 @@ p, h1, h2, h3, h4, h5, h6 {
   font-family: "ubuntu";
   font-size: 0.875rem;
   margin-bottom: 0.25rem; }
+  @media screen and (max-width: 480px) {
+    .info__address {
+      margin-bottom: 0.4375rem; } }
 
 .social {
   margin-top: 0.625rem;
   text-align: right; }
+  @media screen and (max-width: 480px) {
+    .social {
+      margin-top: 0.9375rem;
+      text-align: center; } }
 
 .social__link {
   height: 100%; }
