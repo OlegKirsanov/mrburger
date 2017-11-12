@@ -3,5 +3,9 @@
     font-family: "gagalin";
     font-weight: normal;
     margin: 0;
-    padding: 0; 
+    padding: 0;
+
+    @include tablets {
+        font-size: 4.3rem;
+    }
 }
