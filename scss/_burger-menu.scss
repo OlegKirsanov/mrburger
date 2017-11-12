@@ -3,7 +3,6 @@
   height: 1.5rem;
   position: relative;
   transform: rotate(0deg);
-
   cursor: pointer;
   margin-left: 1.875rem;
 
@@ -17,7 +16,6 @@
     opacity: 0;
     left: 0;
     transform: rotate(0deg);
-
 
     @include tablets {
       opacity: 1;

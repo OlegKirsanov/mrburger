@@ -11,6 +11,11 @@
 
 .form__elem {
     display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .form__col {
@@ -22,13 +27,25 @@
         &:last-child {
             margin-right: 0;
         }
+        
+    @include tablets {
+        margin-right: 0;
+        width: 70%;
+    }
+    
+    @include phones {
+        width: 100%;
+    }
 }
-
 
 .form__row {
     display: flex;
     align-items: baseline;
     margin-bottom: 1.25rem;
+
+    @include phones {
+        justify-content: center;
+    }
 }
 
 .form__block {
@@ -56,17 +73,34 @@
     font-size: 0.875rem;
     width: 100%;
     margin-top: 0.625rem;
+    outline: none;
+    
+    @include tablets {
+        &:focus {
+            border: 2px solid $yellow;
+        }
+    }
+    
 }
     
-.form__textarea {
+.form__textarea-field {
     font-family: "ubuntu";
     font-size: 0.875rem;
     border: 0.0625rem solid $border-gray;
     padding: 0.125rem 0.3125rem;
     border-radius: 0.3125rem;
-    height: 6.625rem;
     width: 100%;
+    resize: none;
+    outline: none;
+    height: 6.75rem;
     margin: 0.625rem 0 0.9375rem 0;
+    
+
+    @include tablets {
+        &:focus {
+            border: 2px solid $yellow;
+        }
+    }
 }
 
 .form__radio, .form__checkbox {
@@ -95,12 +129,12 @@
 
 .form__radio-title {
     vertical-align: middle;
-    margin-left: 0.625rem;
+    margin-left: 0.3rem;
 }
 
 .form__checkbox-title {
     vertical-align: middle;
-    margin-left: 0.625rem;
+    margin-left: 0.3rem;
 }
 
 .form__radio-block {

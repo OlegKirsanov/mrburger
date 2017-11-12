@@ -41,16 +41,31 @@
     padding: 0.625rem 0;
     background: url(../img/bg/chalk-bg.png) center center no-repeat;
     background-size: 100% auto;
+
+    @include phones {
+        height: 7.1875rem;
+        padding-top: 1.25rem;
+    }
 }
 
 .footer-container {
     flex-direction: row;
+    
+    @include phones {
+        flex-direction: column;
+        justify-content: center;
+    }
+
 }
 
 .footer-col {
     min-width: 50%;
     height: 100%;
     flex: 1 0 0;
+
+    @include phones {
+        text-align: center;
+    }
 }
 
 .info__phone-icon, .info__phone-number {
@@ -66,15 +81,21 @@
     font-family: "ubuntu";
     font-size: 0.875rem;
     margin-bottom: 0.25rem;
+
+    @include phones {
+        margin-bottom: 0.4375rem;
+    }
 }
 
 .social {
     margin-top: 0.625rem;
     text-align: right;
-    // display: flex;
-    // justify-content: flex-end;
-    // align-items: center;
-    // height: 100%;
+
+    @include phones {
+        margin-top: 0.9375rem;
+        text-align: center;
+    }
+
 }
 
 .social__link {

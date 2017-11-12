@@ -5,8 +5,12 @@
 .menu__title {
     color: $white;
     position: absolute;
-    top: 15%;
+    top: 6.875rem;
     left: 10%;
+
+    @include phones {
+        top: 3.5rem;
+    }
 }
 
 .menu-accord {

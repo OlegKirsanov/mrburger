@@ -1,7 +1,12 @@
 .page-switch {
     position: fixed;
     top: 12%;
-    right: 4%;
+    right: 2%;
+
+    @include tablets {
+        display: none;
+    }
+
 }
 
 .page-switch__item {
