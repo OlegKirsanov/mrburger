@@ -17,8 +17,8 @@
     white-space: nowrap;   
 
     @include tablets {
-     text-align: center;
-     white-space: nowrap;   
+        text-align: center;
+        white-space: nowrap;   
     }
 }
 
@@ -65,7 +65,7 @@
         height: 100%;
 
         @include tablets {
-        padding: 0 7rem;
+        padding: 0 6rem;
         }
 
         @include phones {
@@ -78,7 +78,8 @@
         padding-left: 0.9375rem;
 
         @include tablets {
-            padding: 1rem 1rem;
+            padding-top: 2rem;
+            padding-left: 0;
         }
     }
 
